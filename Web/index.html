@@ -1,0 +1,296 @@
+<!--
+   + Falta por hacer el descuento y colocarlo en sus respectivas posiciones
+   + Logo
+   + Inicio de Sesion
+--> 
+<html>
+    <head>
+        <title>Tiendita</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+        <style>
+            #containerCenter{
+                display: block;       
+                margin: 10px 8%;           
+            }
+            .containerTitle, .boxTitle{
+                padding: 0 0 0 30px;
+                margin: 0;
+                height: 40px;
+                border-radius: 15px;
+                font-family: "Dosis";
+                font-size: 30px;
+            }
+            .box{
+                display: inline-block;     
+                margin: 10px 0 0 13%;
+                width: 30%;           
+            }
+            
+            #containerCenter hr, .box hr{ border: 1px solid #ffc318; }
+            #boxContainerCenter, .boxContainerMiddle{ padding: 10px; }
+            .insideContainerCenter, .insideBox{
+                white-space: nowrap; 
+                display: inline-block;
+                margin: 5px;
+                width: 150px;
+                height: 220px;
+                padding: 10px;
+                background-color: white;
+                box-shadow: 0px 2px 8px #888888;  
+                border-radius: 3px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .insideContainerCenter:hover{
+                box-shadow: 0px 6px 8px #888888;
+            }
+            .insideContainerCenter input[type="image"], .box img{             
+                width: 150px;
+                height: 150px;
+                
+            }
+           .discount{
+               position: absolute;
+               top: 74%;
+               right: 10px;
+               background-color: lightgreen;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="top">
+            <a href="#"><img src="img/logoPREVIEW.png" id="logo"/></a>
+            <input type="search" id="topSearchBar" placeholder="Buscar...">
+            <div id="insideTopRight">
+                <table>
+                    <tr>
+                        <td><a href="#" id="userName">Elizabeth</a></td>
+                        <td rowspan="2"><a href="#"><img src="img/avatar.png" id="avatar"/></a></td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="dropdown">
+                                <button class="dropdownbutton">Cuenta</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Mis articulos</a>
+                                    <a href="#">Historial</a>
+                                    <hr>
+                                    <a href="#">Cerrar sesión</a>
+                                </div>
+                            </div>
+                        </td>                                             
+                    </tr>                
+                </table>
+            </div>
+            <a href="#" title="Carrito">
+                <img class="topIcons" src="img/icons/shopping.png"/>
+            </a>
+        </div>
+    
+        <img src="img/title.png" id="title"/>
+
+        <!-- /////////////////////////// LEFT SIDEBAR ///////////////////////////////  -->
+        
+        <div id="leftSidebar">
+            <div class="leftSidebarButton">                      
+                <table>
+                    <tr>
+                        <td><a href="#"><img class="iconSidebar" src="img/icons/car.png"/></a></td>   
+                        <td><label>Automoviles</label></td>                      
+                    </tr>                  
+                </table>
+            </div>   
+            <div class="leftSidebarButton">         
+                <table>
+                    <tr>
+                        <td><a href="#"><img class="iconSidebar" src="img/icons/tv.png"/></a></td>   
+                        <td><label>Electrodomesticos</label></td>       
+                    </tr>                  
+                </table>
+            </div>
+            <div class="leftSidebarButton">                   
+                <table>
+                    <tr>
+                        <td><a href="#"><img class="iconSidebar" src="img/icons/oven.png"/></a></td>
+                        <td><label>Hogar</label></td>       
+                    </tr>                  
+                </table>
+            </div>
+            <div class="leftSidebarButton">                   
+                <table>
+                    <tr>
+                        <td><a href="#"><img class="iconSidebar" src="img/icons/game.png"/></a></td>
+                        <td><label>VideoJuegos</label></td>       
+                    </tr>                  
+                </table>
+            </div>
+            <div class="leftSidebarButton">                   
+                <table>
+                    <tr>
+                        <td><a href="#"><img class="iconSidebar" src="img/icons/jewel.png"/></a></td>
+                        <td><label>Joyeria</label></td>       
+                    </tr>                  
+                </table>
+            </div>
+            <div class="leftSidebarButton">                   
+                <table>
+                    <tr>
+                        <td><a href="#"><img class="iconSidebar" src="img/icons/shirt.png"/></a></td>
+                        <td><label>Ropa</label></td>       
+                    </tr>                  
+                </table>
+            </div>
+            <div class="leftSidebarButton">                   
+                <table>
+                    <tr>
+                        <td><a href="#"><img class="iconSidebar" src="img/icons/book.png"/></a></td>
+                        <td><label>Libros</label></td>       
+                    </tr>                  
+                </table>
+            </div>
+            <div class="leftSidebarButton">                   
+                <table>
+                    <tr>
+                        <td><a href="#"><img class="iconSidebar" src="img/icons/sofa.png"/></a></td>
+                        <td><label>Muebles</label></td>       
+                    </tr>                  
+                </table>
+            </div>
+            <div class="leftSidebarButton">                   
+                <table>
+                    <tr>
+                        <td><a href="#"><img class="iconSidebar" src="img/icons/bear.png"/></a></td>
+                        <td><label>Juguetes</label></td>       
+                    </tr>                  
+                </table>
+            </div>
+            <div class="leftSidebarButton">                   
+                <table>
+                    <tr>
+                        <td><a href="#"><img class="iconSidebar" src="img/icons/music.png"/></a></td>
+                        <td><label>Musica</label></td>       
+                    </tr>                  
+                </table>
+            </div>
+            
+        </div>
+    
+        <div id="containerCenter">
+            <p class="containerTitle">Lo más vendido</p>
+            <hr>
+            <div id="boxContainerCenter">
+                <div class="insideContainerCenter">
+                    <input type="image" href="#" src="img/merch/1.jpg"/>                  
+                    <p>$200</p>
+                    <p>Sueter cool de AOT</p>             
+                </div>
+                <div class="insideContainerCenter">
+                    <input type="image" href="#" src="img/merch/5.jpg"/>                  
+                    <p>$200</p>
+                    <p>No nombres grandes</p>
+                </div>
+                <div class="insideContainerCenter">
+                    <input type="image" href="#" src="img/merch/5.jpg"/>
+                    <p>$300</p>
+                    <p>Fucking fight ME</p>
+                </div>
+                <div class="insideContainerCenter">
+                    <input type="image" href="#" src="img/merch/5.jpg"/>
+                    <p>$300</p>
+                    <p>Something</p> 
+                </div>
+                <div class="insideContainerCenter">
+                    <input type="image" href="#" src="img/merch/5.jpg"/>
+                    <p>$300</p>
+                    <p>Something</p>
+                </div>
+                <div class="insideContainerCenter">
+                    <input type="image" href="#" src="img/merch/5.jpg"/>
+                    <p>$300</p>
+                    <p>Something</p>
+                </div>
+            </div>   
+        </div>
+    
+        <div class="box">
+            <p class="boxTitle">Lo más visto</p>
+            <hr>
+            <div class="boxContainerMiddle">
+                <div class="insideBox">
+                    <img src="img/merch/6.jpg"/>
+                </div>
+                <div class="insideBox">
+                    <img src="img/merch/6.jpg"/>
+                </div>
+            </div>          
+        </div>
+        
+        <div class="box">
+            <p class="boxTitle">Lo más buscado</p>
+            <hr>
+            <div class="boxContainerMiddle">
+                <div class="insideBox">
+                    <img src="img/merch/6.jpg"/>
+                </div>
+                <div class="insideBox">
+                    <img src="img/merch/6.jpg"/>
+                </div>
+            </div>          
+        </div>
+    
+        <div id="containerCenter">
+            <p class="containerTitle">Mejores calificados</p>
+            <hr>
+            <div id="boxContainerCenter">
+                <div class="insideContainerCenter">
+                    <input type="image" href="#" src="img/merch/1.jpg"/>                  
+                    <p>$200</p>
+                    <p>Sueter cool de AOT</p>           
+                </div>
+                <div class="insideContainerCenter">
+                    <input type="image" href="#" src="img/merch/5.jpg"/>                  
+                    <p>$200</p>
+                    <p>No nombres grandes</p>
+                </div>
+                <div class="insideContainerCenter">
+                    <input type="image" href="#" src="img/merch/5.jpg"/>
+                    <p>$300</p>
+                    <p>Fucking fight ME</p>
+                </div>
+                <div class="insideContainerCenter">
+                    <input type="image" href="#" src="img/merch/5.jpg"/>
+                    <p>$300</p>
+                    <p>Something</p>    
+                </div>
+                <div class="insideContainerCenter">
+                    <input type="image" href="#" src="img/merch/5.jpg"/>
+                    <p>$300</p>
+                    <p>Something</p>
+                </div>
+                <div class="insideContainerCenter">
+                    <input type="image" href="#" src="img/merch/5.jpg"/>
+                    <p>$300</p>
+                    <p>Something</p> 
+                </div>
+            </div>   
+        </div>
+        <div id="containerBottom">
+                <img src="img/uanl.png"/>
+                <img src="img/fcfm.png"/>
+            <div class="insideContainerBottom">
+                <ul>
+                    <li>Facultad de Ciencias Fisico Matematicas</li>
+                    <li>Proyecto BDM/PAPW</li>
+                    <li>Elizabeth Herrera | 1632859</li>
+                </ul>
+                <ul style="border-left: 1px solid white;">
+                    <li>Multimedia Y Animacion Digital</li>
+                    <li><br></li>
+                    <li>elizabeth.herrera2530@gmail.com</li>
+                </ul>
+            </div>        
+        </div>
+    </body>
+</html>
